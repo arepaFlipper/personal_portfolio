@@ -1,3 +1,10 @@
+## Initialize the vite React TypeScript project 
+
+`npm init vite@latest .`
+
+### install dependencies
+
+`npm install framer-motion react-anchor-link-smooth-scroll`
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
