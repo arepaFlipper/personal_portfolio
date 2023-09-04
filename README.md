@@ -10,6 +10,19 @@
 This hook will allow us to pass in a query and it'll tell us when it particularly matches,
 this particular breakpoint for a screen size.
 
+### Tailwind installation
+`npm install tailwindcss -D`
+
+Add the `tailwind.config.js` file and add to index.css:
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+To hot reload the tailwind changes, run:
+`npx tailwindcss -i ./src/index.css -o ./public/output.css --watch`
 
 # React + TypeScript + Vite
 
