@@ -3,14 +3,15 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
 type TNavbar = {
-  selectedPage: string,
-  setSelectedPage: (page: string) => void,
+  selectedPage: string;
+  setSelectedPage: (page: string) => void;
+  isTopOfPage: boolean;
 };
 
 type TLink = {
-  page: string,
-  selectedPage: string,
-  setSelectedPage: (page: string) => void,
+  page: string;
+  selectedPage: string;
+  setSelectedPage: (page: string) => void;
 }
 
 
@@ -27,11 +28,12 @@ const Link = ({ page, selectedPage, setSelectedPage }: TLink) => {
   )
 };
 
-const Navbar = ({ selectedPage, setSelectedPage }: TNavbar) => {
+const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: TNavbar) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+  const navbarBackground = isTopOfPage ? "" : "bg-red";
   return (
-    <nav className={`z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">AF</h4>
         {isAboveSmallScreens ? (

@@ -24,6 +24,24 @@ Add the `tailwind.config.js` file and add to index.css:
 To hot reload the tailwind changes, run:
 `npx tailwindcss -i ./src/index.css -o ./public/output.css --watch`
 
+The `useEffect` block:
+```
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY === 0) setIsTopOfPage(true);
+      if (window.scrollY !== 0) setIsTopOfPage(false);
+    }
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  })
+```
+we're checking the window which gives us the scroll of `Y`, the 
+position of `Y` on the web page and if it's equal to zero we're 
+going to set this to be `true` otherwise it's going to be `false`
+and then  we need to add that event listener to the window otherwise
+this event listener does not happen and we're going to have to pass in 
+an empty array so that this `useEffect` runs when the component is loaded.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
