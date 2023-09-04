@@ -5,6 +5,12 @@
 ### install dependencies
 
 `npm install framer-motion react-anchor-link-smooth-scroll`
+
+### useMediaQuery
+This hook will allow us to pass in a query and it'll tell us when it particularly matches,
+this particular breakpoint for a screen size.
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
