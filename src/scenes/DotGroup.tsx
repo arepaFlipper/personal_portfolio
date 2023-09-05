@@ -11,9 +11,24 @@ const DotGroup = ({ selectedPage, setSelectedPage }: TDotGroup) => {
   return (
     <div className="flex flex-col gap-6 fixed top-[60%] right-7">
       <AnchorLink
-        className={`${(selectedPage === 'home') ? selectedStyles : "bg-dark-grey"} w-3 h-3 rounded-full`}
+        className={`${(selectedPage === 'home') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
         href="#home"
         onClick={() => setSelectedPage('home')}
+      />
+      <AnchorLink
+        className={`${(selectedPage === 'skills') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
+        href="#skills"
+        onClick={() => setSelectedPage('skills')}
+      />
+      <AnchorLink
+        className={`${(selectedPage === 'projects') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
+        href="#projects"
+        onClick={() => setSelectedPage('projects')}
+      />
+      <AnchorLink
+        className={`${(selectedPage === 'contacts') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
+        href="#contacts"
+        onClick={() => setSelectedPage('contacts')}
       />
     </div>
   )
