@@ -22,10 +22,10 @@ export default {
         openSans: ["Open Sans", "sans-serif"],
       },
       content: {
-        brush: "url('./assets/brush.svg')",
-        person1: "url('./assets/person-1.svg')",
-        person2: "url('./assets/person-2.svg')",
-        person3: "url('./assets/person-3.svg')",
+        brush: "url('/src/assets/brush.png')",
+        person1: "url('/src/assets/person-1.svg')",
+        person2: "url('/src/assets/person-2.svg')",
+        person3: "url('/src/assets/person-3.svg')",
       },
       screens: {
         xs: "480px",
