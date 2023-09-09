@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import { DotGroup, Landing } from './scenes';
+import { DotGroup, Landing, MySkills } from './scenes';
 import useMediaQuery from '@/hooks/useMediaQuery';
+import { LineGradient } from '@/components';
 import { Navbar } from './scenes';
 import './App.css'
 
@@ -26,6 +27,10 @@ const App = () => {
           <DotGroup selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
         )}
         <Landing setSelectedPage={setSelectedPage} />
+      </div>
+      <LineGradient width="w-full" />
+      <div className="w-5/6 mx-auto md:h-full">
+        <MySkills />
       </div>
     </div>
   )
