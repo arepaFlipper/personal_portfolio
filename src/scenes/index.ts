@@ -5,6 +5,7 @@ import Projects from './Projects';
 import DotGroup from './DotGroup';
 import Landing from './Landing';
 import MySkills from './MySkills';
+import Footer from './Footer';
 
 export {
   Navbar,
@@ -14,4 +15,5 @@ export {
   Projects,
   Contact,
   Testimonials,
+  Footer,
 }

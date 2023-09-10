@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { DotGroup, Landing, MySkills } from './scenes';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { LineGradient } from '@/components';
-import { Navbar, Projects, Testimonials, Contact } from './scenes';
+import { Navbar, Projects, Testimonials, Contact, Footer } from './scenes';
 import './App.css'
 
 const App = () => {
@@ -48,6 +48,8 @@ const App = () => {
       <div className="w-5/6 mx-auto">
         <Contact />
       </div>
+
+      <Footer />
     </div>
   )
 }
