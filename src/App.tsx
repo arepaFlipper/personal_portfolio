@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { DotGroup, Landing, MySkills } from './scenes';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { LineGradient } from '@/components';
-import { Navbar } from './scenes';
+import { Navbar, Projects } from './scenes';
 import './App.css'
 
 const App = () => {
@@ -31,6 +31,10 @@ const App = () => {
       <LineGradient width="w-full" />
       <div className="w-5/6 mx-auto md:h-full">
         <MySkills />
+      </div>
+      <LineGradient width="w-full" />
+      <div className="w-5/6 mx-auto">
+        <Projects />
       </div>
     </div>
   )
