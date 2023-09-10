@@ -1,3 +1,4 @@
+import Testimonials from './Testimonials';
 import Navbar from './Navbar';
 import Projects from './Projects';
 import DotGroup from './DotGroup';
@@ -10,4 +11,5 @@ export {
   Landing,
   MySkills,
   Projects,
+  Testimonials,
 }
