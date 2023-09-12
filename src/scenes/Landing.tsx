@@ -11,7 +11,7 @@ type TLanding = {
 
 const Landing = ({ setSelectedPage }: TLanding) => {
   return (
-    <section id="home" className="md:flex md:justify-between md:items-center md:h-full gap-16 py-10">
+    <section id="home" className="md:flex md:justify-around md:items-center md:h-full gap-16 py-10">
       <Image_section />
       <div className="z-30 basis-2/5 mt-12 md:mt-32">
         <Main_text />
@@ -39,7 +39,7 @@ export default Landing
 const Image_section = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
+    <div className="mt-16 md:mt-0 h-5/6 w-1/2">
       <ComputersCanvas />
     </div>
 
