@@ -6,7 +6,7 @@ const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const skills = [
     { title: "Experience", text: 'A auctor pharetra. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.', delay: 0, color: 'bg-blue' },
-    { title: "Innovative", text: 'Urna,eget pulvinar ut, mattis sed, tristique in, nunc. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.', delay: 0.5, color: 'bg-red' },
+    { title: "Innovative", text: 'Urna,eget pulvinar ut, mattis sed, tristique in, nunc. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.', delay: 0.5, color: 'bg-green' },
     { title: "Imaginative", text: 'Accuman eu fringilla ac, vestibulum sit amet, luctus ut, elementum. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.', delay: 0.8, color: 'bg-yellow' },
   ]
   return (
@@ -14,7 +14,7 @@ const MySkills = () => {
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div className="md:w-1/3" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5 }} variants={{ hidden: { opacity: 0, x: -50 }, visible: { opacity: 1, x: 0 } }}>
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            MY <span className="text-green">SKILLS</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">

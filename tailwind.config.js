@@ -8,12 +8,12 @@ export default {
         white: "#FFF",
         blue: "#2CBCE9",
         red: "#DC4492",
+        green: "#728C69",
         "yellow": "#FDCC49",
         "grey": "#EDEDED",
         "deep-blue": "#010026",
         "deep-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
-        "default": "#white",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow": "radial-gradient(circle at 10% 20%, #6FE7B0 0%, #9AC6F2 100%)",
