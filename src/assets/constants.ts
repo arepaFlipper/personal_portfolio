@@ -1,419 +1,460 @@
-export const Skill_data: Skill_data[] = [
+type TSkill_data = {
+  skill_name: string;
+  Image: string;
+  width: number;
+  height: number;
+}
+
+export const Skill_data: TSkill_data[] = [
   {
     skill_name: "Html 5",
     Image: "/html.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Css",
     Image: "/css.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Java Script",
     Image: "/js.png",
     width: 65,
-    hight: 65,
+    height: 65,
   },
   {
     skill_name: "Tailwind Css",
     Image: "/tailwind.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "React",
     Image: "/react.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Redux",
     Image: "/redux.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "React Query",
     Image: "/reactquery.png",
     width: 80,
-    hight: 80,
+    height: 80,
+  },
+  {
+    skill_name: "vite",
+    Image: "vite.svg",
+    width: 70,
+    height: 70,
   },
   {
     skill_name: "Type Script",
     Image: "/ts.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Next js 13",
     Image: "/next.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Next Auth",
     Image: "https://next-auth.js.org/img/logo/logo-sm.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Json Web Tocken",
     Image:
       "https://seeklogo.com/images/J/json-web-tokens-jwt-io-logo-C003DEC47A-seeklogo.com.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Framer Motion",
     Image: "/framer.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Stripe Payment",
     Image: "/stripe.webp",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Node js",
     Image: "/node-js.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Express js",
     Image: "/express.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Mongo db",
     Image: "/mongodb.png",
     width: 40,
-    hight: 40,
+    height: 40,
   },
   {
     skill_name: "Fire base",
     Image: "/Firebase.png",
     width: 55,
-    hight: 55,
+    height: 55,
   },
   {
     skill_name: "Postger SQL",
     Image: "/postger.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "My SQL",
     Image: "/mysql.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Prisma",
     Image: "/prisma.webp",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Graphql",
     Image: "/graphql.png",
     width: 80,
-    hight: 80,
-  },
-  {
-    skill_name: "React Native",
-    Image: "/ReactNative .png",
-    width: 70,
-    hight: 70,
-  },
-  {
-    skill_name: "Tauri",
-    Image: "/tauri.svg",
-    width: 70,
-    hight: 70,
+    height: 80,
   },
   {
     skill_name: "Docker",
     Image: "/docker.webp",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Nigx",
     Image:
       "https://i0.wp.com/thinkground.studio/wp-content/uploads/2019/04/190415_Nginx-Logo.png?fit=423%2C401&ssl=1",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Figma",
     Image: "/figma.png",
     width: 50,
-    hight: 50,
+    height: 50,
   },
   {
     skill_name: "Web Scoket",
     Image: "https://avatars.githubusercontent.com/u/10566080?s=200&v=4",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
-    skill_name: "Cloundary",
-    Image: "https://cdn.worldvectorlogo.com/logos/cloudinary-2.svg",
+    skill_name: "AWS",
+    Image: "AWS.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
-    skill_name: "Go",
-    Image: "/go.png",
+    skill_name: "Python",
+    Image: "/python.png",
     width: 60,
-    hight: 60,
+    height: 60,
   },
   {
-    skill_name: "Gin gonic",
-    Image: "https://raw.githubusercontent.com/gin-gonic/logo/master/color.png",
-    width: 50,
-    hight: 50,
+    skill_name: "Django",
+    Image: "django.png",
+    width: 70,
+    height: 50,
+  },
+  {
+    skill_name: "REST",
+    Image: "DRF.png",
+    width: 70,
+    height: 50,
+  },
+  {
+    skill_name: "Cypress",
+    Image: "/cypress.svg",
+    width: 70,
+    height: 70,
   },
   {
     skill_name: "Git",
     Image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
     width: 70,
-    hight: 70,
+    height: 70,
+  },
+  {
+    skill_name: "GitHub",
+    Image: "gitwhite.png",
+    width: 70,
+    height: 70,
   },
   {
     skill_name: "Npm",
     Image: "https://authy.com/wp-content/uploads/npm-logo.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
 ];
 
-export const Frontend_skill: Skill_data[] = [
+export const Frontend_skill: TSkill_data[] = [
   {
     skill_name: "Html 5",
     Image: "/html.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Css",
     Image: "/css.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Java Script",
     Image: "/js.png",
     width: 65,
-    hight: 65,
+    height: 65,
   },
   {
     skill_name: "Tailwind Css",
     Image: "/tailwind.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Material UI",
     Image: "/mui.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "React",
     Image: "/react.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Redux",
     Image: "/redux.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "React Query",
     Image: "/reactquery.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Type Script",
     Image: "/ts.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Next js 13",
     Image: "/next.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
 ];
 
-export const Backend_skill: Skill_data[] = [
+export const Backend_skill: TSkill_data[] = [
   {
     skill_name: "Node js",
     Image: "/node-js.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Express js",
     Image: "/express.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Mongo db",
     Image: "/mongodb.png",
     width: 40,
-    hight: 40,
+    height: 40,
   },
   {
     skill_name: "Fire base",
     Image: "/Firebase.png",
     width: 55,
-    hight: 55,
+    height: 55,
   },
   {
     skill_name: "Postger SQL",
     Image: "/postger.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "My SQL",
     Image: "/mysql.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Prisma",
     Image: "/prisma.webp",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Graphql",
     Image: "/graphql.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
 ];
 
-export const Full_stack: Skill_data[] = [
+export const Full_stack: TSkill_data[] = [
   {
     skill_name: "React Native",
     Image: "/ReactNative .png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Tauri",
     Image: "/tauri.svg",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Docker",
     Image: "/docker.webp",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Nigx",
     Image:
       "https://i0.wp.com/thinkground.studio/wp-content/uploads/2019/04/190415_Nginx-Logo.png?fit=423%2C401&ssl=1",
     width: 60,
-    hight: 60,
+    height: 60,
   },
   {
     skill_name: "Figma",
     Image: "/figma.png",
     width: 50,
-    hight: 50,
+    height: 50,
   },
   {
     skill_name: "Web Scoket",
     Image: "https://avatars.githubusercontent.com/u/10566080?s=200&v=4",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Gin gonic",
     Image: "https://raw.githubusercontent.com/gin-gonic/logo/master/color.png",
     width: 50,
-    hight: 50,
+    height: 50,
   },
 ];
 
-export const Other_skill: Skill_data[] = [
+export const Other_skill: TSkill_data[] = [
   {
     skill_name: "Next Auth",
     Image: "https://next-auth.js.org/img/logo/logo-sm.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Json Web Tocken",
     Image:
       "https://seeklogo.com/images/J/json-web-tokens-jwt-io-logo-C003DEC47A-seeklogo.com.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Framer Motion",
     Image: "/framer.png",
     width: 80,
-    hight: 80,
+    height: 80,
   },
   {
     skill_name: "Stripe Payment",
     Image: "/stripe.webp",
     width: 80,
-    hight: 80,
+    height: 80,
   },
 ];
 
-export const Other_skill2: Skill_data[] = [
+export const Other_skill2: TSkill_data[] = [
   {
     skill_name: "Cloundary",
     Image: "https://cdn.worldvectorlogo.com/logos/cloudinary-2.svg",
     width: 70,
-    hight: 70,
+    height: 70,
   },
 
   {
     skill_name: "Git",
     Image: "https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
   {
     skill_name: "Npm",
     Image: "https://authy.com/wp-content/uploads/npm-logo.png",
     width: 70,
-    hight: 70,
+    height: 70,
   },
 ];
-export const Other_skill3: Skill_data[] = [
+export const Other_skill3: TSkill_data[] = [
   {
     skill_name: "Go",
     Image: "/go.png",
     width: 60,
-    hight: 60,
+    height: 60,
   },
 ];
 
-export const Project: Project_data[] = [
+type TProject_data = {
+  title: string;
+  video_key: string;
+  say_xi: string;
+  say_xi_blog: string;
+  technology_feature: string[];
+  about_this_app: string;
+  design_blog: string;
+  dependencies_blog: string;
+  package: string[];
+  conclusion_blog: string;
+  youtube_link: string;
+  githhub_link: string;
+  frontend_dowload_link: string;
+  backend_dowload_link: string;
+  project_image: string;
+  project_blog: string;
+  Type?: string;
+  indevelopment?: boolean;
+  project_Img_Mobile?: string[];
+}
+
+export const Project: TProject_data[] = [
   {
     title: "Morden Next js 13 Profiol",
     video_key: "HvkrAjHJ-38",

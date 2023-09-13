@@ -11,11 +11,11 @@ import { LineGradient } from '@/components';
 import Skill_data_provider from "@/components/Skill_data_provider";
 import { motion } from "framer-motion";
 
-interface ISkill_data {
+type TSkill_data = {
   skill_name: string;
   Image: string;
   width: number;
-  hight: number;
+  height: number;
 }
 
 function Technologies() {
@@ -38,7 +38,7 @@ function Technologies() {
         </p>
       </motion.div>
       <div className=" w-full 800:w-[800px] h-auto  flex 950:hidden   flex-row items-center justify-around mt-[30px] flex-wrap   ">
-        {Skill_data.map((data: ISkill_data, index: number) => (
+        {Skill_data.map((data: TSkill_data, index: number) => (
           <Skill_data_provider
             key={data.skill_name + index}
             type={"Frontend_skill"}
@@ -48,7 +48,7 @@ function Technologies() {
         ))}
       </div>
       <div className=" w-full 800:w-[850px] h-auto hidden 950:flex  flex-row items-center justify-around mt-[30px] flex-wrap   ">
-        {Frontend_skill.map((data: ISkill_data, index: number) => (
+        {Frontend_skill.map((data: TSkill_data, index: number) => (
           <Skill_data_provider
             key={data.skill_name + index}
             type={"Frontend_skill"}
@@ -58,7 +58,7 @@ function Technologies() {
         ))}
       </div>
       <div className=" w-full 800:w-[770px] h-auto hidden 950:flex  flex-row items-center justify-around mt-[30px] flex-wrap   ">
-        {Backend_skill.map((data: ISkill_data, index: number) => (
+        {Backend_skill.map((data: TSkill_data, index: number) => (
           <Skill_data_provider
             key={data.skill_name + index}
             type={"Backend_skill"}
@@ -68,7 +68,7 @@ function Technologies() {
         ))}
       </div>
       <div className=" w-full 800:w-[670px] h-auto hidden 950:flex  flex-row items-center justify-around mt-[30px] flex-wrap   ">
-        {Full_stack.map((data: ISkill_data, index: number) => (
+        {Full_stack.map((data: TSkill_data, index: number) => (
           <Skill_data_provider
             key={data.skill_name + index}
             type={"Backend_skill"}
@@ -78,7 +78,7 @@ function Technologies() {
         ))}
       </div>
       <div className=" w-full 800:w-[630px] h-auto hidden 950:flex  flex-row items-center justify-around mt-[30px] flex-wrap   ">
-        {Other_skill.map((data: ISkill_data, index: number) => (
+        {Other_skill.map((data: TSkill_data, index: number) => (
           <Skill_data_provider
             key={data.skill_name + index}
             type={"Backend_skill"}
@@ -88,7 +88,7 @@ function Technologies() {
         ))}
       </div>
       <div className=" w-full 800:w-[500px] h-auto hidden 950:flex  flex-row items-center justify-around mt-[30px] flex-wrap   ">
-        {Other_skill2.map((data: ISkill_data, index: number) => (
+        {Other_skill2.map((data: TSkill_data, index: number) => (
           <Skill_data_provider
             key={data.skill_name + index}
             type={"Backend_skill"}
@@ -98,7 +98,7 @@ function Technologies() {
         ))}
       </div>
       <div className=" w-full 800:w-[600px] h-auto hidden 950:flex  flex-row items-center justify-around mt-[30px] flex-wrap   ">
-        {Other_skill3.map((data: ISkill_data, index: number) => (
+        {Other_skill3.map((data: TSkill_data, index: number) => (
           <Skill_data_provider
             key={data.skill_name + index}
             type={"Backend_skill"}

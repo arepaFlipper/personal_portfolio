@@ -5,7 +5,7 @@ interface Skill_data {
   skill_name: string;
   Image: string;
   width: number;
-  hight: number;
+  height: number;
 }
 
 interface Props {
@@ -27,7 +27,7 @@ function Skill_data_provider({ data, index, type }: Props) {
         <img
           alt={data.skill_name}
           width={data.width}
-          height={data.hight}
+          height={data.height}
           src={data.Image}
           className=""
         />
