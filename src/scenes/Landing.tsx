@@ -58,9 +58,9 @@ const Main_text = () => {
         visible: { opacity: 1, x: 0 },
       }}
     >
-      <p className="text-6xl font-playfair z-10 text-center md:text-start">
+      <p className="text-6xl text-white font-playfair z-10 text-center md:text-start">
         Cris {" F. "}
-        <span className="xs:relative xs:text-deep-blue xs:font-semibold z-20 xs:before:content-brush before:absolute before:-left-[50px] before:-top-[120px] before:z-[-1]" >
+        <span className="xs:relative xs:text-white xs:font-semibold z-20  before:absolute before:-left-[50px] before:-top-[120px] before:z-[-1]" >
           Tovar
         </span>
       </p>

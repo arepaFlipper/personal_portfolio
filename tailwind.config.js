@@ -5,6 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        white: "#FFF",
         blue: "#2CBCE9",
         red: "#DC4492",
         "yellow": "#FDCC49",
@@ -12,10 +13,11 @@ export default {
         "deep-blue": "#010026",
         "deep-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
+        "default": "#white",
       },
       backgroundImage: (theme) => ({
-        "gradient-rainbow": "linear-gradient(81deg, #00B5EE 7%, #FF45A4 45%, #FFBA00 78%)",
-        "gradient-rainblue": "linear-gradient(90deg, #24CBFF 14%, #FC59FF 69.36%, #FFBD0C 117%)",
+        "gradient-rainbow": "radial-gradient(circle at 10% 20%, #6FE7B0 0%, #9AC6F2 100%)",
+        "gradient-rainblue": "radial-gradient(circle at 10% 20%, #6FE7B0 0%, #9AC6F2 100%)",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],

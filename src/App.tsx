@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { LineGradient } from '@/components';
 import { Navbar, Projects, Testimonials, Contact, Footer, DotGroup, Landing, MySkills, Technologies } from './scenes';
-import './App.css'
+import "./index.css";
 
 const App = () => {
   const [selectedPage, setSelectedPage] = useState('home');
@@ -19,7 +19,7 @@ const App = () => {
   })
 
   return (
-    <div className="app bg-deep-blue">
+    <div className="h-full bg-deep-blue">
       <Navbar isTopOfPage={isAboveMediumScreens} selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <div className="w-5/6 mx-auto md:h-full">
         {isAboveMediumScreens && (
