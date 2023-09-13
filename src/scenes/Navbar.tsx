@@ -40,8 +40,9 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: TNavbar) => {
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
             <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <Link page="Technologies" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-            {/* <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
+            <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
           </div>
         ) : (
@@ -61,8 +62,9 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: TNavbar) => {
             <div className="flex flex-col gap-10 ml-[33%] text-2xl text-deep-blue">
               <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+              <Link page="Technologies" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-              {/* <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
+              <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             </div>
           </div>

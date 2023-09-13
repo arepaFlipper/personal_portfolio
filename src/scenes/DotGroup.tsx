@@ -21,14 +21,24 @@ const DotGroup = ({ selectedPage, setSelectedPage }: TDotGroup) => {
         onClick={() => setSelectedPage('skills')}
       />
       <AnchorLink
+        className={`${(selectedPage === 'technologies') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
+        href="#technologies"
+        onClick={() => setSelectedPage('technologies')}
+      />
+      <AnchorLink
         className={`${(selectedPage === 'projects') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
         href="#projects"
         onClick={() => setSelectedPage('projects')}
       />
       <AnchorLink
-        className={`${(selectedPage === 'contacts') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
+        className={`${(selectedPage === 'testimonials') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
+        href="#testimonials"
+        onClick={() => setSelectedPage('testimonials')}
+      />
+      <AnchorLink
+        className={`${(selectedPage === 'contact') ? selectedStyles : "bg-deep-grey"} w-3 h-3 rounded-full`}
         href="#contacts"
-        onClick={() => setSelectedPage('contacts')}
+        onClick={() => setSelectedPage('contact')}
       />
     </div>
   )
