@@ -10,26 +10,54 @@ type TLanding = {
 
 
 const Landing = ({ setSelectedPage }: TLanding) => {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
     <section id="home" className="md:flex md:justify-around md:items-center md:h-full gap-16 py-10">
-      <Image_section />
-      <div className="z-30 basis-2/5 mt-12 md:mt-32">
-        <Main_text />
-        <Call_to_actions setSelectedPage={setSelectedPage} />
-        <motion.div
-          className="flex mt-5 justify-center md:justify-start"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          variants={{
-            hidden: { opacity: 0, x: -50 },
-            visible: { opacity: 1, x: 0 },
-          }}
-        >
-          <SocialMediaIcons />
-        </motion.div>
-      </div>
+      {isAboveMediumScreens ? (
+
+        <>
+          <Image_section />
+          <div className="z-30 basis-2/5 mt-12 md:mt-32">
+            <Main_text />
+            <Call_to_actions setSelectedPage={setSelectedPage} />
+            <motion.div
+              className="flex mt-5 justify-center md:justify-start"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <SocialMediaIcons />
+            </motion.div>
+          </div>
+        </>
+      ) : (
+
+        <>
+          <div className="z-30 basis-2/5 mt-12 md:mt-32">
+            <Main_text />
+            <Call_to_actions setSelectedPage={setSelectedPage} />
+            <Image_section />
+            <motion.div
+              className="flex mt-5 justify-center md:justify-start"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              <SocialMediaIcons />
+            </motion.div>
+          </div>
+        </>
+      )}
     </section>
   )
 }
@@ -39,9 +67,19 @@ export default Landing
 const Image_section = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
-    <div className="mt-16 md:mt-0 h-5/6 w-1/2">
-      <ComputersCanvas />
-    </div>
+    <>
+      {
+        isAboveMediumScreens ? (
+          <div className="mt-16 h-5/6 w-1/2" >
+            <ComputersCanvas />
+          </div >
+        ) : (
+          <div className="md:mt-0" >
+            <ComputersCanvas />
+          </div >
+        )}
+
+    </>
 
   )
 }

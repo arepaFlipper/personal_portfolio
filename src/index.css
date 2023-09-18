@@ -13,3 +13,12 @@ body,
   @apply text-white;
   color: white;
 }
+
+@media screen and (min-width: 480px) {
+  #root{
+    height: 100%;
+    background-color: #1E1E1E;
+    @apply text-white;
+    color: white;
+  }
+}
