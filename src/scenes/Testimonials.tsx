@@ -15,7 +15,7 @@ const Testimonials = () => {
         </p>
         <LineGradient width="mx-auto w-2/4" />
         <p className="mt-10">
-          Here's What People Are Saying About My work. Aliquam aliquet integer ut fames odio in at. At magna ornare dictum lectus.
+          Here's What People Are Saying About My work.
         </p>
       </motion.div>
 

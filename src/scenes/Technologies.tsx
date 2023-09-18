@@ -33,8 +33,11 @@ function Technologies() {
         </div>
         <LineGradient width="w-1/3" />
         <p className="mt-10 mb-7">
-          Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+          I have a knack for envisioning unique and user-centric solutions.
+          Whether it's crafting intuitive user interfaces or designing creative features,
+          I believe that imagination is the driving force behind remarkable software.
+          With every project, I strive to bring a touch of innovation and creativity
+          that captures users' attention and enhances their experiences.
         </p>
       </motion.div>
       <div className=" w-full 800:w-[800px] h-auto  flex 950:hidden   flex-row items-center justify-around mt-[30px] flex-wrap   ">

@@ -5,9 +5,9 @@ import { motion } from 'framer-motion';
 const MySkills = () => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   const skills = [
-    { title: "Experience", text: 'A auctor pharetra. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.', delay: 0, color: 'bg-blue' },
-    { title: "Innovative", text: 'Urna,eget pulvinar ut, mattis sed, tristique in, nunc. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet.', delay: 0.5, color: 'bg-green' },
-    { title: "Imaginative", text: 'Accuman eu fringilla ac, vestibulum sit amet, luctus ut, elementum. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.', delay: 0.8, color: 'bg-yellow' },
+    { title: "Experience", text: " I have a proven track record of putting my skills into action. I've successfully tackled challenging projects, delivered robust solutions, and collaborated effectively with diverse teams. My experience is not just about what I know, but how I apply it to real-world scenarios, ensuring that every project I work on is a success.", delay: 0, color: 'bg-blue' },
+    { title: "Innovative", text: "I bring fresh ideas and out-of-the-box thinking to every project. My ability to find novel solutions and adapt to evolving technology trends ensures that I stay ahead in the ever-changing landscape of software development. Innovation is not just a skill; it's a mindset that I apply to every aspect of my work.", delay: 0.5, color: 'bg-green' },
+    { title: "Imaginative", text: " I have a knack for envisioning unique and user-centric solutions. Whether it's crafting intuitive user interfaces or designing creative features, I believe that imagination is the driving force behind remarkable software. With every project, I strive to bring a touch of innovation and creativity that captures users' attention and enhances their experiences.", delay: 0.8, color: 'bg-yellow' },
   ]
   return (
     <section id="skills" className="pt-10 pb-24">
@@ -18,7 +18,7 @@ const MySkills = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue.
+            My skills encompass a wide range of technical expertise, from front-end to back-end development. I excel in creating responsive web applications, managing databases effectively, and using version control for collaborative projects. I'm also adept at problem-solving and staying up-to-date with emerging technologies to deliver top-notch solutions.
           </p>
         </motion.div>
         <div className="mt-16 md:mt-0">

@@ -66,8 +66,9 @@ const Main_text = () => {
       </p>
 
       <p className="mt-10 mb-7 text-sm text-center md:text-start">
-        Adipiscing arcu, in aliquam fringilla cursus. Elit arcu elementum
-        viverra malesuada sem ac faucibus dolor. Sagittis scelerisque.
+        Full-stack software develover passionate about creating seamless digital solutions that bridge design and functionality.
+        With expertise in front-end and back-end development, I excel at crafting user-friendly applications and optimizing
+        database performance. Explore my versatile skills and innovative solutions for exceptional user experiences.
       </p>
     </motion.div>
   )
