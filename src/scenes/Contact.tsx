@@ -18,7 +18,7 @@ const Form = () => {
         <img src="/src/assets/contact-image.jpeg" alt="contact" />
       </motion.div>
       <motion.div className="basis-1/2 mt-10 md:mt-0" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} transition={{ duration: 0.5, delay: 0.2 }} variants={{ hidden: { opacity: 0, y: 50 }, visible: { opacity: 1, y: 0 } }}>
-        <form target="_blank" onSubmit={onSubmit} action="https://formsubmit.co/justsomedummyemail@gmail.com" method='POST'>
+        <form target="_blank" onSubmit={onSubmit} action="https://formsubmit.co/d548597402a65de7afb84eea69d70df5" method='POST'>
 
           <input className="w-full bg-blue font-semibold placeholder-opaque-black p-3" type="text" placeholder="NAME" {...register("name", { required: true, maxLength: 100, })} />
           {errors.name && (
