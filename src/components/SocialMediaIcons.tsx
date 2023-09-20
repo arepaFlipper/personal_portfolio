@@ -14,7 +14,7 @@ const SocialMediaIcons = () => {
       {icons.map((icon) => {
         return (
           <a className="hover:opacity-50 transition duration-500" href={`https://www.${icon}.com/`} target="_blank" rel="noreferrer" key={icon}>
-            <img alt={icon} src={`/src/assets/${icon}.png`} />
+            <img alt={icon} src={`/${icon}.png`} />
           </a>
         )
       }

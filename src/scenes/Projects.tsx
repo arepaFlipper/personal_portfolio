@@ -25,7 +25,7 @@ const Project = ({ title }: { title: string }) => {
         <p className="text-2xl font-playfair">{title}</p>
         <p className="mt-7">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.</p>
       </div>
-      <img src={`/src/assets/${projectTitle}.jpeg`} alt={projectTitle} />
+      <img src={`/${projectTitle}.jpeg`} alt={projectTitle} />
     </motion.div>
   )
 }
