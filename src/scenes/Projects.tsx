@@ -73,12 +73,12 @@ const Projects = () => {
 
           {[
             { title: "finance_app", href: "https://finance-l1q330sgh-arepaflipper.vercel.app/", desc: "Gain insights at a glance! Our web dashboard features dynamic pie and bar charts for a quick overview of your finances. Track expenses, analyze income trends, and make informed decisions with ease. Simplify financial management—empower your financial journey!" },
-            { title: "Project 2", href: "#project-1" },
-            { title: "Project 3", href: "#project-1" },
-            { title: "Project 4", href: "#project-1" },
-            { title: "Project 5", href: "#project-1" },
-            { title: "Project 6", href: "#project-1" },
-            { title: "Project 7", href: "#project-1" },
+            { title: "Project 2", href: "#project-1", desc: "Project 2 description" },
+            { title: "Project 3", href: "#project-1", desc: "Project 3 description" },
+            { title: "Project 4", href: "#project-1", desc: "Project 4 description" },
+            { title: "Project 5", href: "#project-1", desc: "Project 5 description" },
+            { title: "Project 6", href: "#project-1", desc: "Project 6 description" },
+            { title: "Project 7", href: "#project-1", desc: "Project 7 description" },
           ].map(({ title, href, desc }, index) => <Project key={index} title={title} href={href} desc={desc} />)}
 
           <div className="flex justify-center text-center items-center p-10 bg-green max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
