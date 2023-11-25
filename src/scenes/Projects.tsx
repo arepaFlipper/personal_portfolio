@@ -16,16 +16,16 @@ const projectVariant = {
 }
 
 
-const Project = ({ title }: { title: string }) => {
-  const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+const Project = ({ title, href, desc }: { title: string, href: string, desc: string }) => {
+  const overlayStyles = `cursor-pointer absolute aspect-square h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
   return (
-    <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
+    <motion.div variants={projectVariant} className="relative" >
+      <a className={overlayStyles} href={href}>
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt.</p>
-      </div>
-      <img src={`/${projectTitle}.jpeg`} alt={projectTitle} />
+        <p className="mt-7">{desc}</p>
+      </a>
+      <img src={`/${projectTitle}.jpeg`} alt={projectTitle} className='aspect-square w-[400px] h-[400px]' />
     </motion.div>
   )
 }
@@ -71,7 +71,15 @@ const Projects = () => {
             BEAUTIFUL USER INTERFACES
           </div>
 
-          {["Project 1", "Project 2", "Project 3", "Project 4", "Project 5", "Project 6", "Project 7"].map((project, index) => <Project key={index} title={project} />)}
+          {[
+            { title: "finance_app", href: "https://finance-l1q330sgh-arepaflipper.vercel.app/", desc: "Gain insights at a glance! Our web dashboard features dynamic pie and bar charts for a quick overview of your finances. Track expenses, analyze income trends, and make informed decisions with ease. Simplify financial management—empower your financial journey!" },
+            { title: "Project 2", href: "#project-1" },
+            { title: "Project 3", href: "#project-1" },
+            { title: "Project 4", href: "#project-1" },
+            { title: "Project 5", href: "#project-1" },
+            { title: "Project 6", href: "#project-1" },
+            { title: "Project 7", href: "#project-1" },
+          ].map(({ title, href, desc }, index) => <Project key={index} title={title} href={href} desc={desc} />)}
 
           <div className="flex justify-center text-center items-center p-10 bg-green max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
             SMOOTH USER EXPERIENCE
