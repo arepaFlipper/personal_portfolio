@@ -2,10 +2,9 @@ import { LineGradient } from '@/components';
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 
-type Props = {}
 
 const Form = () => {
-  const { register, trigger, formState: { errors }, handleSubmit } = useForm();
+  const { register, trigger, formState: { errors } } = useForm();
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     const isValid = await trigger();
     if (!isValid) {
