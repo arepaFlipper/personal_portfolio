@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { LineGradient } from '@/components';
-import { Navbar, Projects, Testimonials, Contact, Footer, DotGroup, Landing, MySkills, Technologies } from './scenes';
+import { Navbar, Projects, Contact, Footer, DotGroup, Landing, MySkills, Technologies } from './scenes';
 import "./index.css";
 
 const App = () => {
@@ -43,10 +43,10 @@ const App = () => {
         <Projects />
       </div>
 
-      <LineGradient width="w-full" />
-      <div className="w-5/6 mx-auto">
-        <Testimonials />
-      </div>
+      {/* <LineGradient width="w-full" /> */}
+      {/* <div className="w-5/6 mx-auto"> */}
+      {/*   <Testimonials /> */}
+      {/* </div> */}
 
       <LineGradient width="w-full" />
       <div className="w-5/6 mx-auto">
