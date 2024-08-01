@@ -29,7 +29,7 @@ const Project = ({ title, href, desc, repo, image }: { title: string, href: stri
         <a className="absolute z-40 bottom-3 w-[46px] h-[46px] hover:w-[50px] hover:h-[50px] flex items-center justify-center right-3 bg-white rounded-full" href={repo}>
           <img src={`/github-142-svgrepo-com.svg`} alt={projectTitle} className='aspect-square w-[40px] h-[40px]' />
         </a>
-        <img src={image} alt={projectTitle} className='aspect-square w-[400px] h-[400px] content-fill ' />
+        <img src={image} alt={projectTitle} className='aspect-square object-cover w-[400px] h-[400px] content-start ' />
       </div>
     </motion.div>
   )
@@ -78,6 +78,7 @@ const Projects = () => {
 
           {[
             { title: "finance_app", image: "finance_app.png", repo: "https://github.com/arepaflipper/finance_app", href: "https://finance-dashboard.cristiantovar.com/", desc: "Gain insights at a glance! Our web dashboard features dynamic pie and bar charts for a quick overview of your finances. Track expenses, analyze income trends, and make informed decisions with ease. Simplify financial management—empower your financial journey!" },
+            { title: "inlaze_movies", image: "inlaze_movies.png", repo: "https://github.com/arepaflipper/inlaze_films", href: "https://inlaze.cristiantovar.com/", desc: "Inlaze Movies is a sleek app that lets you explore popular, now playing, upcoming, top-rated, and favorite movies with intuitive navigation and personalized recommendations. Enjoy a seamless movie discovery experience!" },
             { title: "ionic + Capacitor demo", image: "ionic-capacitor.png", repo: "https://github.com/arepaFlipper/ionic_capacitor", href: "http://ionic-capacitor.cristiantovar.com/", desc: "This is a project demostration for Assignar" },
             { title: "reddit_clone", image: "reddit_clone.png", repo: "https://github.com/arepaflipper/reddit_clone", href: "https://redditclone.cristiantovar.com/", desc: "This clone seamlessly mirrors the popular Reddit interface, offering users an intuitive, engaging experience. With a clean UI, innovative features, and robust moderation tools, it fosters vibrant discussions while prioritizing user safety. " },
             { title: "Quiz Craft AI", image: "quiz_craft_ai.png", repo: "https://github.com/arepaflipper/quizcraftai", href: "https://quizcraftai.cristiantovar.com/dashboard", desc: "powerful AI-driven quiz platform that allows you to create and deploy quizzes that leverage the capabilities of artificial intelligence." },
