@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import useMediaQuery from "@/hooks/useMediaQuery";
+import { Link as RouterLink } from "react-router-dom";
 
 type TNavbar = {
   selectedPage: string;
@@ -44,6 +45,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: TNavbar) => {
             <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            <RouterLink to="/cv">CV</RouterLink>
           </div>
         ) : (
           <button className="rounded-full bg-green p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
