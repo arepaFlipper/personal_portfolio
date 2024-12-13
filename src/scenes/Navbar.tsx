@@ -34,7 +34,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: TNavbar) => {
   const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-green";
   return (
-    <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
+    <nav className={`${navbarBackground} z-50 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
         <h4 className="font-playfair text-3xl font-bold">CFT</h4>
         {isAboveSmallScreens ? (
