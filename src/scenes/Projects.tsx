@@ -10,18 +10,12 @@ const container = {
   }
 }
 
-const projectVariant = {
-  hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1 },
-}
-
-
 const Project = ({ title, href, desc, repo, image }: { title: string, href: string, desc: string, repo: string, image: string }) => {
   const overlayStyles = `cursor-pointer absolute aspect-square h-full w-full opacity-0 hover:opacity-90 transition duration-500 bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
   return (
-    <motion.div variants={projectVariant} className="relative hover:opcacity-100" >
-      <div className="h-full w-full hover:opcacity-90">
+    <div className="relative hover:opcacity-100" >
+      <picture className="h-full w-full hover:opcacity-90">
         <a className={overlayStyles} href={href}>
           <p className="text-2xl font-playfair">{title}</p>
           <p className="mt-7">{desc}</p>
@@ -30,8 +24,8 @@ const Project = ({ title, href, desc, repo, image }: { title: string, href: stri
           <img src={`/github-142-svgrepo-com.svg`} alt={projectTitle} className='aspect-square w-[40px] h-[40px]' />
         </a>
         <img src={image} alt={projectTitle} className='aspect-square object-cover w-[400px] h-[400px] content-start ' />
-      </div>
-    </motion.div>
+      </picture>
+    </div>
   )
 }
 
@@ -77,13 +71,13 @@ const Projects = () => {
           </div>
 
           {[
-            { title: "finance_app", image: "finance_app.png", repo: "https://github.com/arepaflipper/finance_app", href: "https://finance-dashboard.cristiantovar.com/", desc: "Gain insights at a glance! Our web dashboard features dynamic pie and bar charts for a quick overview of your finances. Track expenses, analyze income trends, and make informed decisions with ease. Simplify financial management—empower your financial journey!" },
-            { title: "inlaze_movies", image: "inlaze_movies.png", repo: "https://github.com/arepaflipper/inlaze_films", href: "https://inlaze.cristiantovar.com/", desc: "Inlaze Movies is a sleek app that lets you explore popular, now playing, upcoming, top-rated, and favorite movies with intuitive navigation and personalized recommendations. Enjoy a seamless movie discovery experience!" },
-            { title: "ionic + Capacitor demo", image: "ionic-capacitor.png", repo: "https://github.com/arepaFlipper/ionic_capacitor", href: "http://ionic-capacitor.cristiantovar.com/", desc: "This is a project demostration for Assignar" },
-            { title: "reddit_clone", image: "reddit_clone.png", repo: "https://github.com/arepaflipper/reddit_clone", href: "https://redditclone.cristiantovar.com/", desc: "This clone seamlessly mirrors the popular Reddit interface, offering users an intuitive, engaging experience. With a clean UI, innovative features, and robust moderation tools, it fosters vibrant discussions while prioritizing user safety. " },
-            { title: "Quiz Craft AI", image: "quiz_craft_ai.png", repo: "https://github.com/arepaflipper/quizcraftai", href: "https://quizcraftai.cristiantovar.com/dashboard", desc: "powerful AI-driven quiz platform that allows you to create and deploy quizzes that leverage the capabilities of artificial intelligence." },
-            { title: "chat_app", image: "chat_app.png", repo: "https://github.com/arepaflipper/chat_app", href: "http://telesign-chatapp.cristiantovar.com/", desc: "This is a project demostration for TeleSign" },
-            { title: "fighting_game (coming soon)", image: "fighting_game.png", repo: "https://github.com/arepaflipper/fighting_game", href: "https://fighting-game-ts.vercel.app/", desc: "🎮 Just tried this vanilla TypeScript web fighting game – it's a knockout! 👊💻 Impressive animations, intuitive controls, and a perfect blend of simplicity and depth. Diverse characters and clean TypeScript code make it a browser gaming gem! #TypeScriptGaming #IndieGame" },
+            { title: "finance_app", image: "finance_app.webp", repo: "https://github.com/arepaflipper/finance_app", href: "https://finance-dashboard.cristiantovar.com/", desc: "Gain insights at a glance! Our web dashboard features dynamic pie and bar charts for a quick overview of your finances. Track expenses, analyze income trends, and make informed decisions with ease. Simplify financial management—empower your financial journey!" },
+            { title: "inlaze_movies", image: "inlaze_movies.webp", repo: "https://github.com/arepaflipper/inlaze_films", href: "https://inlaze.cristiantovar.com/", desc: "Inlaze Movies is a sleek app that lets you explore popular, now playing, upcoming, top-rated, and favorite movies with intuitive navigation and personalized recommendations. Enjoy a seamless movie discovery experience!" },
+            { title: "ionic + Capacitor demo", image: "ionic-capacitor.webp", repo: "https://github.com/arepaFlipper/ionic_capacitor", href: "http://ionic-capacitor.cristiantovar.com/", desc: "This is a project demostration for Assignar" },
+            { title: "reddit_clone", image: "reddit_clone.webp", repo: "https://github.com/arepaflipper/reddit_clone", href: "https://redditclone.cristiantovar.com/", desc: "This clone seamlessly mirrors the popular Reddit interface, offering users an intuitive, engaging experience. With a clean UI, innovative features, and robust moderation tools, it fosters vibrant discussions while prioritizing user safety. " },
+            { title: "Quiz Craft AI", image: "quiz_craft_ai.webp", repo: "https://github.com/arepaflipper/quizcraftai", href: "https://quizcraftai.cristiantovar.com/dashboard", desc: "powerful AI-driven quiz platform that allows you to create and deploy quizzes that leverage the capabilities of artificial intelligence." },
+            { title: "chat_app", image: "chat_app.webp", repo: "https://github.com/arepaflipper/chat_app", href: "http://telesign-chatapp.cristiantovar.com/", desc: "This is a project demostration for TeleSign" },
+            { title: "fighting_game (coming soon)", image: "fighting_game.webp", repo: "https://github.com/arepaflipper/fighting_game", href: "https://fighting-game-ts.vercel.app/", desc: "🎮 Just tried this vanilla TypeScript web fighting game – it's a knockout! 👊💻 Impressive animations, intuitive controls, and a perfect blend of simplicity and depth. Diverse characters and clean TypeScript code make it a browser gaming gem! #TypeScriptGaming #IndieGame" },
           ].map(({ title, href, desc, repo, image }, index) => <Project key={index} title={title} href={href} desc={desc} repo={repo} image={image} />)}
 
           <div className="flex justify-center text-center items-center p-10 bg-green max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold">
