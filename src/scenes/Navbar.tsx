@@ -43,7 +43,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: TNavbar) => {
             <Link page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Technologies" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-            <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+            {/* <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
             <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
             <RouterLink to="/cv">CV</RouterLink>
           </div>
@@ -66,7 +66,7 @@ const Navbar = ({ selectedPage, setSelectedPage, isTopOfPage }: TNavbar) => {
               <Link page="Skills" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Technologies" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <Link page="Projects" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-              <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
+              {/* <Link page="Testimonials" selectedPage={selectedPage} setSelectedPage={setSelectedPage} /> */}
               <Link page="Contact" selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
               <RouterLink to="/cv">CV</RouterLink>
             </div>
