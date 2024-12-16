@@ -46,7 +46,7 @@ const experience_data: TJob[] = [
       "Deployed applications to <span class='font-semibold'>AWS</span>, <span class='font-semibold'>Digital Ocean</span>, <span class='font-semibold'>Vercel</span>, and <span class='font-semibold'>Heroku</span>, ensuring scalability and reliability.",
       "Utilized <span class='font-semibold'>Docker</span> and <span class='font-semibold'>NGINX</span> to manage CI/CD pipelines and optimize infrastructure for continuous deployment.",
       "Collaborated with cross-functional teams to deliver scalable solutions and improve software architecture.",
-      "Assisted in the development of backend services using <span class='font-semibold'>Python</span> and <span class='font-semibold'>Django</span>, improving API response times by 20%.",
+      "Assisted in the development of backend services using <span class='font-semibold'>Python</span> and <span class='font-semibold'>Django REST Framework</span>, improving API scalability and maintainability.",
       "Worked with <span class='font-semibold'>PostgreSQL</span> for efficient database management and data integrity.",
       "Deployed internal tools using <span class='font-semibold'>AWS</span> services such as <span class='font-semibold'>S3</span> and <span class='font-semibold'>EC2</span>.",
     ],
